@@ -4,19 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SharedAngularMaterialModule } from './shared-angular-material/shared-angular-material.module';
-import { ItemComponent } from './item/item.component';
+import { MaterialModule } from './shared/material/material.module';
+import { TabelaComponent } from './componentes/tabela/tabela.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemComponent
+    TabelaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedAngularMaterialModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
